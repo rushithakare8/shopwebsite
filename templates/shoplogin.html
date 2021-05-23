@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block title%} Shoplogin {% endblock title %}
+
+{% block body %}
+<style>
+body {
+  background-image: url('image/6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
+h1{
+    scroll-behavior:smooth;
+    position:sticky;
+    padding-left:150px;
+
+}
+form.container1{
+    height:400px;
+    margin-top:80px;
+    margin-left:40px;
+    background: #76D7C4;
+    width:40%;
+    border-radius:10%;
+}
+button.btn btn-primary{
+    margin-left:80px;
+}
+img{
+  top: 60px; /* your required value */
+  right: 0;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  
+}
+</style>
+<div class=container2>
+
+
+<form action="" class="container1">
+
+<h1>Shops Login Here </h1>
+<div class="mb-2 py-2 mx-4">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="form-group mb-2 py-2 mx-4">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check mb-2 py-2 mx-4">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary mb-2 py-2 mx-4">Submit</button>
+  <p class="form-group form-check mb-2 py-2 mx-4"> Create new Account<a  href="/registershop">click Here..</a></p>
+</form>
+</div>
+
+<img src="image/sho.png" class="img-fluid" alt="Responsive image" style="height:500px;">
+
+{% endblock body %}

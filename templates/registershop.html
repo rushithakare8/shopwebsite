@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% block title%} Register Shop {% endblock title %}
+
+{% block body %}
+<style>
+body{
+margin:0;
+padding:0;
+font-family:sans-serif;
+  background-image:url('image/2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.box{
+    border-radius:10%;
+	width:500px;
+    height:650px;
+	padding-left:40px;
+	padding-right:40px;
+    padding-top:45px;
+    padding-bottom:40px;
+    position: absolute;
+	bottom:35%;
+	left: 25%;
+	transform:translate(-50%,50%);
+	background:#76D7C4;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-family: italic;
+}
+.box h1{
+	color:black;
+	text-transform:uppercase;
+	font-weight:500;
+}
+.box h3{
+	color:black;
+		font-weight:200;
+}
+.box input[type="text"],.box input[type="password"],.box input[type="tel"]
+{
+	border:0;
+	background:#fff;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #3498db;
+	padding:14px 10px;
+	width:300px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+}
+.box input[type="email"],.box input[type="password"],.box input[type="tel"]
+{
+	border:0;
+	background:#fff;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #3498db;
+	padding:14px 10px;
+	width:300px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+}
+.box input[type="number"],.box input[type="password"].,box inputp[type="tel"]
+{
+	border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #3498db;
+	padding:14px 10px;
+	width:300px;
+	outline:none;
+	color:white; 
+	border-radius:24px;
+	transition:0.25s;
+}
+.box input[type ="text"]:focus,.box input[type="password"],.box input[type="tel"]:focus
+{
+	width:380px;
+	border-color:#2ecc71;
+}
+.box input[type="submit"]
+{
+	border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #2ecc71;
+	padding:14px 40px;
+	outline:none;
+	color:black;
+	border-radius:24px;
+	transition:0.25s;
+	cursor:pointer;
+}
+.box input[type="submit"]:hover{
+	background:#2ecc71;
+}
+img{
+  top: 90px; /* your required value */
+  right: 70px;
+  width: 50%;
+  height: 80%;
+  position: fixed;
+  
+}
+</style>
+
+<form class="box" action="index.html" method="GET">
+<h1>Shop Registration</h1>
+<input type="text" name="First Name" placeholder="First Name">
+<input type="text" name="Last Name" placeholder="Last Name">
+<input type="text" name="Email Id" placeholder="Email Id">
+<input type="tel" name="Mobile Number" placeholder="Mobile Number">
+<input type="text" name="Previous College" placeholder="Previous college ">
+<input type="text" name="" placeholder="Address">
+<input type="submit" name="" value="Login"></header>
+</form>
+<img src="image/svg22.png" class="img-fluid" alt="Responsive image">
+{% endblock body %}
